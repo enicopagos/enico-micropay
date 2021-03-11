@@ -1,0 +1,70 @@
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "animate.css";
+
+:root {
+    --enico-color: #007f92;
+}
+
+body {
+    -webkit-user-select: none !important;
+    -moz-user-select: -moz-none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
+
+    @media only print {
+        display:none !important
+    }
+}
+
+.enico-gradient {
+    content: "";
+    position: relative;
+    margin-top: -200px;
+    height: 200px;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+}
+.enico-container {
+
+    @media (min-width: 640px){
+        max-width: 500px !important;
+    }
+
+    a, a:hover {
+        color: var(--enico-color);
+    }
+
+    input, button {
+        @apply enico-rounded enico-p-2 enico-border enico-border-solid #{!important};
+        border-color: var(--enico-color) !important;
+    }
+
+    p {
+        color: black !important;
+    }
+}
+
+.enico-button {
+    @apply enico-rounded enico-p-2 enico-border enico-border-solid #{!important};
+    border-color: var(--enico-color) !important;
+    background-color: var(--enico-color) !important;
+    color: white !important;
+    text-decoration: none;
+
+    &:hover, &:focus {
+        background-color: var(--enico-color) !important;
+    }
+}
+
+.enico-message {
+    @apply enico-py-2 enico-px-4 enico-mb-2 enico-border enico-border-solid #{!important};
+
+    &.enico-info {
+        @apply enico-border-blue-300 enico-bg-blue-200 #{!important};
+    }
+
+    &.enico-error {
+        @apply enico-border-red-300 enico-bg-red-200 #{!important};
+    }
+}
