@@ -14,10 +14,10 @@
  *
  * @wordpress-plugin
  * Plugin Name:       Enico Micropagos
- * Plugin URI:        https://enico.info
+ * Plugin URI:        https://github.com/enicopagos/enico-micropay
  * Description:       Énico es un sistema de micropagos para contenidos de tu sitio web. A través de un muro de pago (paywall), permite monetizar piezas de contenido de forma individual. Está asociado a Mercado Pago.
  * Version:           1.5.0
- * Author:            Enico
+ * Author:            Énico
  * Author URI:        https://enico.info
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
