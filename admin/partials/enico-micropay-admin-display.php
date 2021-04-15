@@ -113,33 +113,4 @@
 <?php submit_button(); ?>
 </form>
 
-<h2>Zona de cuidado</h2>
-<p>Solo para versiones 1.1 y 1.2 que migran a 1.5.</p>
-<p>Ejecutar cada migración solo una vez.</p>
-<table class="form-table">
-    <tbody>
-        <tr valign="top">
-            <th scope="row">Migrar configuraciones</th>
-            <td>
-               <input type="button" class="migrateBtn button" data-action="settings" value="Migrar">
-                <p class="description">Migrar las configuraciones del plugin</p>
-            </td>
-        </tr>
-        <tr valign="top">
-            <th scope="row">Migrar tokens</th>
-            <td>
-               <input type="button" class="migrateBtn button" data-action="tokens" value="Migrar">
-                <p class="description">Migrar los tokens de usuarios que ya compraron los artículos</p>
-            </td>
-        </tr>
-        <tr valign="top">
-            <th scope="row">Migrar opciones de entradas</th>
-            <td>
-               <input type="button" class="migrateBtn button" data-action="posts" value="Migrar">
-                <p class="description">Migrar las configuraciones de cada entrada</p>
-            </td>
-        </tr>
-    </tbody>
-</table>
-
 </div>
