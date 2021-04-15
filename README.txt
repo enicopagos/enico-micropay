@@ -9,6 +9,10 @@ Stable tag: 1.5.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
+==Versión 1.5.1 (WordPress)==
+Esta versión es la que se encuentra en el repositorio de plugins de WordPress y se recomienda para aquellos usuarios que instalan por primera vez el plugin de Énico.
+
+==Énico, paywall para contenido único==
 Énico es un sistema de micropagos fácil de usar que permite comprar y vender contenido en internet mediante transacciones únicas. El muro de pago bloquea artículos individuales, permitiendo su pago a través de MercadoPago. Funciona en todos los países en los que existe MercadoPago/MercadoLibre.
 
 ==Características:==
