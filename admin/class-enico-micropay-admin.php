@@ -653,19 +653,22 @@ class Enico_Micropay_Admin {
 			return;
 		}
 
-		// Save meta fields
-		$activate_payment = $_REQUEST['enico_activate_payment'];
-		update_post_meta($post_id, '_enico_activate_payment', $activate_payment);
+		// Santize information and save meta fields
+		$activate_payment = sanitize_text_field($_REQUEST['enico_activate_payment']);
+		if ($activate_payment == 'on' || $activate_payment == 'off')
+			update_post_meta($post_id, '_enico_activate_payment', $activate_payment);
 
-		$default_price = $_REQUEST['enico_default_price'];
-		update_post_meta($post_id, '_enico_default_price', $default_price);
+		$default_price = sanitize_text_field($_REQUEST['enico_default_price']);
+		if (is_numeric($default_price) || !$default_price)
+			update_post_meta($post_id, '_enico_default_price', $default_price);
 		
-		$min_price = $_REQUEST['enico_min_price'];
-		update_post_meta($post_id, '_enico_min_price', $min_price);
+		$min_price = sanitize_text_field($_REQUEST['enico_min_price']);
+		if ($min_price == 'on' || $min_price == 'off')
+			update_post_meta($post_id, '_enico_min_price', $min_price);
 		
-		$custom_price = $_REQUEST['enico_custom_price'];
-		update_post_meta($post_id, '_enico_custom_price', $custom_price);
-		
+		$custom_price = sanitize_text_field($_REQUEST['enico_custom_price']);
+		if (is_numeric($custom_price) || !$custom_price)
+			update_post_meta($post_id, '_enico_custom_price', $custom_price);
 	}
 
 	/**
