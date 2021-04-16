@@ -189,7 +189,7 @@ class Enico_Micropay_Public {
 			$search_token = array_search($token, array_column($buyers_list, 'token'));
 		}
 		/** Check if this post has the enico payment activated */
-		if ($is_payment_active && !is_numeric($search_token)) {
+		if (is_single() && $is_payment_active && !is_numeric($search_token)) {
 
 			/** count words until MORE tag; default 1000 words */
 			$more_tag = strpos($content, '<span id="more-') ?: 1000;
